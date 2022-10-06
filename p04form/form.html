@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="ramdanstyle.css">
+</head>
+<body> 
+    <body>
+        <img src="kop_surat.jpg" width="100%">
+	<h2>Formulir Pendaftaran Mahasiswa Baru</h2>
+	<h3>Petunjuk Pengisian:</h3>
+	<ol>
+		<li>Isilah data dengan cermat, teliti dan benar</li>
+		<li>Isilah dengan huruf Kapital</li>
+		<li>Salah Pengetikan pada pengisian formulir ini akan berakibat kesalahan pada penulisan data Saudara pada ijazah</li>
+	</ol>
+    <form>
+		<fieldset class="kardus1">
+			<table>
+				<tr>
+					<th align="left">1.</th>
+					<th align="left">Nomor Pendaftaran</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="tel" autofocus></td>
+				</tr>
+				<tr>
+					<th align="left">2.</th>
+					<th align="left">Nama</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="text" maxlength="50" ></td>
+				</tr>
+				<tr>
+					<th align="left">3.</th>
+					<th align="left">Jenis Kelamin</th>
+					<td>:</td>
+					<td class="kolom-daftar" >
+						<input type="radio" value="Laki-laki"> Laki-laki
+						<input type="radio" value="Perempuan"> Perempuan
+					</td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">Ukuran Jaket</th>
+					<td>:</td>
+					<td class="kolom-daftar" >
+						<input type="radio" value="small">Small
+						<input type="radio"  value="medium">Medium
+                        <input type="radio" value="large">Large
+                        <input type="radio" value="extra_large">Extra Large
+					</td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">Sistem Pembayaran</th>
+					<td>:</td>
+					<td class="kolom-daftar" >
+						<input type="radio" value="Angsuran"> Angsuran
+						<input type="radio" value="Tunai"> Tunai
+					</td>
+				</tr>
+        <tr>
+					<th></th>
+					<th align="left">Waktu Kuliah</th>
+					<td>:</td>
+					<td class="kolom-daftar" >
+						<input type="radio" value="pagi">Pagi
+						<input type="radio" value="sore">Sore
+                        <input type="radio" value="malam">Malam
+					</td>
+				</tr>
+        <tr>
+					<th align="left">4.</th>
+					<th align="left">Jenjang/Jurusan</th>
+					<td>:</td>
+					<td>
+						<table border="3" cellpadding="5" class="kolom-daftar" >
+							<thead>
+								<tr>
+									<th rowspan="2">JENJANG</th>
+									<th colspan="2">PROGRAM STUDI</th>
+								</tr>
+								<tr>
+									<th>Reguler</th>
+									<th>Karyawan</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>
+										D III <br>
+										(Diploma Tiga)
+									</th>
+									<td>
+										<input type="radio" value="Reguler Akuntansi"> Akuntansi <br>
+										<input type="radio" value="Reguler Manajemen Perusahaan"> Manajemen Perusahaan
+									</td>
+									<td>
+										<input type="radio" value="Karywan Akuntansi"> Akuntansi <br>
+										<input type="radio" value="Karyawan Manajemen Perusahaan"> Manajemen Perusahaan
+									</td>
+								</tr>
+								<tr>
+									<th>
+										S 1 <br>
+										(Strata Satu)
+									</th>
+									<td>
+										<input type="radio" value="Reguler Akuntansi"> Akuntansi <br>
+										<input type="radio" value="Reguler"> Manajemen
+									</td>
+									<td>
+										<input type="radio" value="Karywan Akuntansi"> Akuntansi <br>
+										<input type="radio" value="Karyawan Manajemen"> Manajemen
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<br>
+        <b>DATA PRIBADI</b>
+		<fieldset class="kardus2">
+			<table>
+				<tr>
+					<th align="left">5.</th>
+					<th align="left">Agama</th>
+					<td>:</td>
+					<td><select class="kolom-daftar">
+                        <option value=""></option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Budha</option>
+                    </select>
+                    </td>
+				</tr>
+				<tr>
+					<th align="left">6.</th>
+					<th align="left">Tempat</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="text"></td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">Tanggal Lahir</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="date"></td>
+				</tr>
+				<tr>
+					<th align="left">7.</th>
+					<th align="left">Alamat dan No. Rumah</th>
+					<td>:</td>
+					<td><textarea class="kolom-daftar"></textarea></td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">RT/RW</th>
+					<td>:</td>
+					<td><input class="kolom-daftar"type="text"></td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">Kota</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="text"></td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">Kode Pos</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="text"></td>
+				</tr>
+				<tr>
+					<th align="left">8.</th>
+					<th align="left">Nomor Telepon Rumah / HP</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="tel"></td>
+				</tr>
+				<tr>
+					<th align="left">10.</th>
+					<th align="left">Nama Orang tua / Wali</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="text"></td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">Pekerjaan</th>
+					<td>:</td>
+					<td class="kolom-daftar">
+						<select>
+              <option value=""></option>
+              <option value="TNI">TNI</option>
+              <option value="POLRI">POLRI</option>
+              <option value="DOKTER">DOKTER</option>
+              <option value="GURU">GURU</option>
+              <option value="PENGACARA">PENGACARA</option>
+              <option value="WIRASWASTA">WIRASWASTA</option>
+              <option value="BURUH">BURUH</option>
+            </select>
+					</td>
+				</tr>
+        <tr>
+					<th align="left">9. </th>
+					<th align="left">Kewarganegaraan</th>
+					<td>:</td>
+					<td class="kolom-daftar">
+						<input type="radio" value="WNI"> WNI
+						<input type="radio" value="WNA"> WNA
+                        <th></th>
+					<th align="left">Gol. Darah</th>
+					<td>:</td>
+					<td class="kolom-daftar">
+						<select>
+							<option value=""></option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="AB">AB</option>
+							<option value="O">O</option>
+						</select>
+					</td>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<br>
+        <b>PENDIDIKAN TERAKHIR</b>
+		<fieldset class="kardus3">
+			<table>
+				<tr>
+					<th align="left">11.</th>
+					<th align="left">Asal SMA/SMK/Perguruan Tinggi</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="text"></td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">Jurusan</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="text" ></td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">Nomor Ijazah SMA/SMK/Diploma III/S1</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="text"></td>
+				</tr>
+        <tr>
+					<th></th>
+					<th align="left">Status Sekolah/Perguruan Tinggi</th>
+					<td>:</td>
+					<td class="kolom-daftar">
+						<input type="radio" value="negeri">Negeri
+						<input type="radio" value="swasta">Swasta
+                        <input type="radio" value="luar negeri">Luar Negeri 
+					</td>
+				</tr>
+				<tr>
+					<th></th>
+					<th align="left">Tanggal Lulus</th>
+					<td>:</td>
+					<td><input class="kolom-daftar" type="date"></td>
+				</tr>
+			</table>
+		</fieldset>
+		<br>
+		<table align="right">
+			<tr>
+				<td>Cirebon, <input type="date"></td>
+			</tr>
+			<tr>
+				<td height="100px"></td>
+			</tr>
+			<tr>
+				<td><input class="kolom-daftar" type="text"></td>
+			</tr>
+		</table> <br>
+  <button type="submit" class="tombol">Kirim</button>
+	</form>
+    </body>
+    </html>
