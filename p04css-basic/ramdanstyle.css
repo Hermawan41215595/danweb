@@ -1,0 +1,50 @@
+body {
+  width: auto;
+  padding: 100px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.kardus1 {
+  background-color: rgb(151, 214, 151);
+  border-radius: 15px;
+}
+.kardus2 {
+  background-color: rgb(151, 214, 151);
+  border-radius: 15px;
+}
+.kardus3 {
+  background-color: rgb(151, 214, 151);
+  border-radius: 15px;
+}
+
+.kolom-daftar {
+  background: rgb(255, 255, 255, 0.6);
+  border-radius: 2px;
+  padding: 1px 0;
+  height: 20px;
+}
+
+.kolom-daftar:hover {
+  background-color: white;
+  transition: 0.7s;
+}
+
+.tombol {
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: green;
+  padding: 7px 0;
+  font-size: 16px;
+  color: white;
+}
+
+.tombol:hover {
+  background-color: greenyellow;
+  color: black;
+  cursor: pointer;
+  transition: 0.6s;
+}
