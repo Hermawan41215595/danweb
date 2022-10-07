@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+.bagian-luar-surat {
+  max-width: 22cm;
+  max-height: 30cm;
+  background-color: white;
+  width: 100%;
+  padding: 1cm 2cm 1cm 2cm;
+  border: 2px solid #ccc;
+  margin: auto;
+}
+
+.bagian-sampul {
+  display: grid;
+  grid-template-columns: 11cm 8cm;
+  height: 3.5cm;
+  width: 20cm;
+}
+
+.logo-kenca {
+  display: grid;
+  grid-template-columns: 2cm auto;
+}
+
+.wadah-alamat {
+  padding-top: 5px;
+  padding-left: 20px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.logo-ikmi {
+  width: 1.8cm;
+  margin-top: 5px;
+}
+
+.judul-surat {
+  width: 19cm;
+  height: 24cm;
+}
+
+.kresek-logo {
+  height: 2cm;
+}
+
+.bungkus-logo {
+  text-align: center;
+}
+
+.kandel {
+  font-weight: bold;
+}
+
+.bungkus-sk {
+  height: 0.6cm;
+  padding-top: 1.5px;
+}
+
+.warna-sk {
+  background-color: red;
+}
+
+.warna-terakreditasi {
+  background-color: green;
+}
+
+.warna-sk,
+.warna-terakreditasi {
+  text-align: center;
+  color: white;
+}
+
+.warna-luhur {
+  font-size: 11px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  text-align: center;
+  padding-right: 7px;
+  padding-top: 5px;
+}
+
+.ieu-stmik {
+  margin-top: -8px;
+  letter-spacing: 6px;
+  padding-left: 8px;
+  font-size: 58px;
+  font-weight: bold;
+  color: red;
+}
+
+.ieu-ikmi {
+  font-size: 30px;
+  margin-top: -2.5px;
+  letter-spacing: 11px;
+  color: blue;
+}
+.ieu-cirebon {
+  margin-top: -7px;
+  font-size: 15px;
+  color: green;
+  letter-spacing: 5.5px;
+}
+
+.ieu-ikmi,
+.ieu-cirebon {
+  font-weight: bold;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.bagian-ikmi {
+  margin-top: 6px;
+  display: pinkz;
+  display: grid;
+  grid-template-columns: 5.5cm auto;
+}
+
+.judul-surat-1 {
+  letter-spacing: 4px;
+  font-size: 14pt;
+  text-decoration: underline;
+  text-align: center;
+  margin: 8px 0 0 0;
+}
+
+.nomor-surat {
+  margin-top: 4px;
+  font-size: 11pt;
+  text-align: center;
+}
