@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Delete</title>
+  <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  <style>
+    table tr th {
+      background-color: green;
+      color: white;
+    }
+    table tr td {
+      background-color: rgb(136, 187, 136);
+      transition: 0.7s;
+    }
+    table tr td:hover {
+      background-color: green;
+      color: white;
+      transition: 0.5s;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>5 Teman Terbaik</h1>
+    <table width="50%" border="1" cellspacing="2" cellpadding="5">
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Alamat</th>
+        <th>Edit</th>
+      </tr>
+      <tr id="area__1">
+        <td align="center">1.</td>
+        <td class="huruf">Dimas Nugraha</td>
+        <td class="huruf">Ciamis</td>
+        <td class="hapus" id="hapus__1">Hapus</td>
+      </tr>
+      <tr id="area__2">
+        <td align="center">2.</td>
+        <td class="huruf">Asep Pajar</td>
+        <td class="huruf">Ciamis</td>
+        <td class="hapus" id="hapus__2">Hapus</td>
+      </tr>
+      <tr id="area__3">
+        <td align="center">3.</td>
+        <td class="huruf">Adhivia</td>
+        <td class="huruf">Ciamis</td>
+        <td class="hapus" id="hapus__3">Hapus</td>
+      </tr>
+      <tr id="area__4">
+        <td align="center">4.</td>
+        <td class="huruf">Akmal Fauzan</td>
+        <td class="huruf">Ciamis</td>
+        <td class="hapus" id="hapus__4">Hapus</td>
+      </tr>
+      <tr id="area__5">
+        <td align="center">5.</td>
+        <td class="huruf">Abdul Hakim</td>
+        <td class="huruf">Cirebon</td>
+        <td class="hapus" id="hapus__5">Hapus</td>
+      </tr>
+  </center>
+  <script>
+    $(document).ready(function () {
+        $(".hapus").click(function () {
+          let yakin = confirm("Yang bener mau dihapus?");
+          if (!yakin) return;
+          let id = $(this).prop("id");
+          let rid = id.split("__");
+          let area_ke = rid[1];
+          $("#area__"+ area_ke).fadeOut(); 
+        });
+      }); 
+</script>
+</body>
+</html>
