@@ -1,0 +1,52 @@
+.kotak-nav {
+  background-color: rgb(24, 182, 24);
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nuabi {
+  font-weight: bold;
+}
+
+h2 {
+  margin: auto;
+}
+
+p {
+  margin-bottom: auto;
+}
+
+.eusina {
+  border-radius: 3px;
+  border: none;
+  color: white;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu:hover {
+  background-color: green;
+}
+
+.aktif {
+  background-color: green;
+}
+
+.pangbuka {
+  padding: 12px;
+  background-color: white;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+  text-align: justify;
+}
+
+.jerona {
+  background-color: white;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  text-align: justify;
+  display: none;
+}
