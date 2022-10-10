@@ -8,6 +8,7 @@
 
 .nuabi {
   font-weight: bold;
+  color: white;
 }
 
 h2 {
@@ -16,6 +17,40 @@ h2 {
 
 p {
   margin-bottom: auto;
+}
+
+img {
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+}
+
+.projek ul {
+  list-style: none;
+}
+
+.projek ul li {
+  padding: 10px;
+}
+
+.projek ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.projek ul li a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: white;
+  background-color: green;
+  box-shadow: 2px 2px 3px grey;
+}
+
+img:hover {
+  box-shadow: 8px 8px 10px green;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .eusina {
@@ -36,6 +71,10 @@ p {
   background-color: green;
 }
 
+.bio h3:hover {
+  color: green;
+}
+
 .pangbuka {
   padding: 12px;
   background-color: white;
@@ -43,10 +82,65 @@ p {
   text-align: justify;
 }
 
+.isikonten {
+  display: flex;
+  width: 100%;
+  background-color: aqua;
+}
+
+.isina {
+  width: 100%;
+  max-width: 325px;
+  padding-bottom: 20px;
+}
+
 .jerona {
+  width: 100%;
   background-color: white;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
   padding: 12px;
   text-align: justify;
   display: none;
+}
+
+.isikontak {
+  width: 100%;
+  max-width: 720px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.pencet {
+  background-color: rgb(24, 182, 24);
+  min-width: 30px;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+}
+
+.pencet:hover {
+  background-color: green;
+  color: white;
+}
+
+.pamencetan {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }

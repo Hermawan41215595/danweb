@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="rmdnstyle.css" />
+  </head>
+  <body>
+    <div class="Wadah">
+      <div class="kotak-nav">
+        <div class="nuabi">Ramdan Hermawan</div>
+        <div class="konten">
+          <span class="eusina aktif" id="eusi_1">Beranda</span>
+          <span class="eusina" id="eusi_2">Projek</span>
+          <span class="eusina" id="eusi_3">Kontak</span>
+        </div>
+      </div>
+      <div class="pangbuka" id="jero_1" style="display: block">
+        <div class="isikonen">
+          <div align="center" class="poto">
+            <img width="186px" height="237px" src="photo.jpeg" />
+          </div>
+          <div align="center" class="bio">
+            <h3>Ramdan Hermawan | 412115595</h3>
+            <div class="isina">
+              <p>
+                Saya Ramdan Hermawan,asal kabupaten Ciamis Jawa barat, menempuh
+                pendidikan di STMIK IKMI Cirebon mengambil jurusan teknik
+                informatika, NIM 41215595,angkatan tahun 2021.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jerona" id="jero_2" style="display: none">
+        <div class="projek">
+          <ul>
+            <li><a href="../p03/tabel.html">Tabel HTML</a></li>
+            <li><a href="../p03css/tabelcss.html">Tabel CSS</a></li>
+            <li><a href="../p03jquery/tabeljquery.html">Tabel Jquery</a></li>
+            <li><a href="../p04form/form.html">Formulir HTML</a></li>
+            <li><a href="../p04css-basic/formcss.html">Formulir CSS</a></li>
+            <li>
+              <a href="../p05jquery-delete/jquery delete.html"
+                >Jquery Fadeout</a
+              >
+            </li>
+            <li><a href="../p04kopsurat/kopsurat.html">Kop Surat</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="jerona" id="jero_3" style="display: none">
+        <h2 align="center">Hubungi saya disini</h2>
+        <div class="isikontak">
+          <ul>
+            <form action="#" method="post">
+              <label for="nami">Nama</label>
+              <input type="text" id="nami" placeholder="Ketik nama lengkap" />
+              <label for="imel">E-mail</label>
+              <input type="email" id="imel" placeholder="masukan E-mail" />
+              <label for="pesan">Pesan</label>
+              <textarea id="sms" placeholder="Ketik disini"></textarea>
+              <div class="pamencetan">
+                <input type="submit" value="Kirim" class="pencet" />
+              </div>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".eusina").click(function () {
+          let id = $(this).prop("id");
+          let split = id.split("_");
+          let nu_aing = split[1];
+
+          $(".eusina").removeClass("aktif");
+          $("#eusi_" + nu_aing).addClass("aktif");
+          $(".home").slideUp();
+          $("#jero_1").slideUp();
+          $("#jero_2").slideUp();
+          $("#jero_3").slideUp();
+          $("#jero_" + nu_aing).slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
